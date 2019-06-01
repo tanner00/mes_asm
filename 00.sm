@@ -1,0 +1,53 @@
+# main:
+#	movi $r1, 1
+#	movi $r2, 0
+#
+#	movi $r4, 20
+#	movi $r5, 35
+
+#fib:
+#	add $r1, $r2
+#	movr $r3, $r1
+
+#	# *r4 = r3
+#	str $r4, $r3
+
+#	movr $r1, $r2
+#	movr $r2, $r3
+
+#	addi $r4, 1
+#	bneq $r4, $r5, fib
+
+#out:
+#	nop
+
+movi $r1, 2000000
+movi $r2, 0x100
+
+test:
+	load $r3, $r2
+	addi $r2, 1
+
+	subi $r1, 1
+	bneq $r1, $r0, test
+
+nop
+
+#call test 
+#movi $r2, 5
+#nop
+
+#test:
+#	call other
+#	movi $r1, 8
+
+#	ret
+
+#other:
+#	call again
+#	movi $r3, 10
+#	ret
+
+#again:
+#	movi $r4, 20
+#	ret
