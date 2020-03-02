@@ -51,7 +51,6 @@ OP_IMM_INSTRS = ['jmp', 'call']
 OP_R_INSTRS = ['not', 'jmpr']
 OP_INSTRS = ['nop', 'ret']
 
-# Dirty global variables. Stop me.
 line_num = 1
 label_offsets = {}
 
